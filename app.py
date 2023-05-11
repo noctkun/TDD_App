@@ -9,7 +9,7 @@ from os import environ
 #print("SECRET_KEY: ",SECRET_KEY)
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 app = Flask(__name__)
-client = MongoClient("mongodb://localhost:27017")
+client = MongoClient("mongodb+srv://calemgansxavier:gnBMfJgiLJ7yX5e@cluster0.qfmt4zt.mongodb.net/?retryWrites=true&w=majority")
 db = client["thyroidDetection"]
 collection = db["patients"]
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
